@@ -1,6 +1,7 @@
-# flutter_study
+# Startup Name Generator
 
 A new Flutter project.
+Basead on FLutter Getting Started article and Google Developer (part 2)
 
 ## Getting Started
 
