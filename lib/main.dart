@@ -107,11 +107,13 @@ class _RandomWordsState extends State<RandomWords> {
                 semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
               ),
               onTap: () {
-                if (alreadySaved) {
-                  _savedSuggestions.remove(_suggestions[index]);
-                } else {
-                  _savedSuggestions.add(_suggestions[index]);
-                }
+                setState(() {
+                  if (alreadySaved) {
+                    _savedSuggestions.remove(_suggestions[index]);
+                  } else {
+                    _savedSuggestions.add(_suggestions[index]);
+                  }
+                });
               },
             );
           }),
